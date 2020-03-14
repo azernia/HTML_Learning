@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>表格标签学习</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<!--
+			table
+				border:设置表格边框
+				cellpadding:内容到边框的距离
+				cellspacing:边框大小
+			一般单元格格式设置行高(每一行的高度)和列宽(第一行的每一个单元格)
+			tr:表示一行
+			th:表头,默认居中加黑
+			td:表示一列(单元格),默认居左显示
+			特点:默认自适应单元格宽度
+		-->
+		<h3>表格标签学习</h3>
+		<hr />
+		<table border="1px" cellpadding="0" cellspacing="0">
+			<tr height="35px">
+				<th width="150px">科目</th>
+				<th width="150px">级别</th>
+				<th width="150px">分数</th>
+				<th width="150px">说明</th>
+			</tr>
+			<tr height="35px">
+				<td>JAVA</td>
+				<td>100</td>
+				<td>8</td>
+				<td>面向对象的语言</td>
+			</tr>
+			<tr height="35px">
+				<td>C</td>
+				<td>100</td>
+				<td>8</td>
+				<td>面向过程的语言</td>
+			</tr>
+		</table>
+		<h3>单元格的合并</h3>
+		<hr />
+		<table border="1px" cellspacing="0" cellpadding="0">
+			<tr height="20px">
+				<th width="100px">Header</th>
+				<th width="100px">Header</th>
+				<th width="100px">Header</th>
+				<th width="100px">Header</th>
+			</tr>
+			<tr height="20px">
+				<td colspan="4"></td>
+			</tr>
+			<tr height="20px">
+				<td></td>
+				<td></td>
+				<td rowspan="2"></td>
+				<td></td>
+			</tr>
+			<tr height="20px">
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>

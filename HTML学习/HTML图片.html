@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>图片</title>
+	</head>
+	<body>
+		<!--
+			绝对路径：从根盘符开始的
+			相对路径：从当前文件所在位置查找另一个文件所在位置所经过的路径，依赖于文件位置
+			图片标签：默认显示原图大小,默认不换行
+				img
+				src:图片路径
+				width,height:单独设置图片的某个高度或者宽度时会在图片不失真的情况下自动缩小
+				title:图片标题，鼠标放在图片上时显示
+				alt:图片加载失败时显示的文字
+				单位：px，%
+				一般本地图片资源使用相对路径(行内元素)
+		-->
+		<h3 align="center">图片标签学习</h3>
+		<hr />
+		<!--图片位于本地资源-->
+		<img src="images/01.gif" title="萨菲罗斯"/>
+		<img src="images/02.jpg" width="500px"/>
+		<hr />
+		<!--使用网络资源-->
+		<img src="https://i0.hdslb.com/bfs/article/6fa967c0e8bd2c5de7eae7f5c3c1f1dc812cf255.jpg@1280w_808h.webp" width="500px"/ alt="加载失败">
+	</body>
+</html>
