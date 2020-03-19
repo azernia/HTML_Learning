@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>框架标签</title>
+	</head>
+	<!--
+		frameset
+			src:进行网页资源加载
+			rows:按行分割,*表示剩余所有
+			cols:按列分割
+		frame
+			字标签,进行站位,可以单独加载网页资源
+			src:资源路径
+			name:区域名
+		不需要body,一定要删除
+	-->
+	<frameset rows="10%,*,10%">
+		<frame src="frameset/top.html"/>
+		<frameset cols="10%,*">
+			<frame src="frameset/left.html"/>
+			<frame src="frameset/right.html" name="_right"/>
+		</frameset>
+		<frame src="frameset/bottom.html"/>
+	</frameset>
+</html>
